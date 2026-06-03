@@ -1,6 +1,14 @@
-CREATE DATABASE catalogo;
+/*
+CONEXÃO NO MYSQL WORKBENCH
 
-USE catalogo;
+Hostname: centerbeam.proxy.rlwy.net
+Port: 12624
+Username: root
+Password: (senha do Railway)
+Default Schema: railway
+
+*/
+USE railway;
 
 CREATE TABLE itens (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -9,3 +17,5 @@ CREATE TABLE itens (
     descricao TEXT,
     nota_preco VARCHAR(20)
 );
+
+SHOW TABLES;
