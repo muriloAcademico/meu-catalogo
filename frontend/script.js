@@ -1,4 +1,4 @@
-const API = "http://localhost:3000";
+const API = "https://meu-catalogo.onrender.com";
 
 const form = document.getElementById("formulario");
 const lista = document.getElementById("lista");
