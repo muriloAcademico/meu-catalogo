@@ -2,6 +2,7 @@ const mysql = require("mysql2");
 
 const conexao = mysql.createConnection({
     host: process.env.DB_HOST,
+    port: process.env.DB_PORT,
     user: process.env.DB_USER,
     password: process.env.DB_PASSWORD,
     database: process.env.DB_NAME
@@ -9,9 +10,9 @@ const conexao = mysql.createConnection({
 
 conexao.connect((erro) => {
     if (erro) {
-        console.log("Erro ao conectar:", erro);
+        console.error("Erro ao conectar:", erro);
     } else {
-        console.log("MySQL conectado!");
+        console.log("Banco conectado!");
     }
 });
 
